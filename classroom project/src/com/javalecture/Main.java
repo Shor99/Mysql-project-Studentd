@@ -7,7 +7,6 @@ public class Main {
     public static void main(String[] args) throws SQLException {
 
         MySQL sql = new MySQL();
-        sql.perform("drop database Classroom");
         sql.perform("create database Classroom");
         sql.perform("use Classroom");
         sql.perform("CREATE TABLE `Students` (`name` varchar(50), `phone_number` varchar(10) NOT NULL,`age` bigint,`GPA` double NOT NULL, PRIMARY KEY (`name`))");
